@@ -66,13 +66,13 @@
     //切换数据库需要手动添加对应的数据库实现包：
     //1、单击Host项目文件直接更改FreeSql.Provider.Sqlite包
     //2、首先在管理Nuget程序包浏览选项卡中搜索FreeSql.Provider，选择对应包安装。其次在已安装选项卡中卸载FreeSql.Provider.Sqlite包
-    "type": "Sqlite",
+    "type": "SqlServer",
     //连接字符串
     //MySql "Server=localhost; Port=3306; Database=admindb; Uid=root; Pwd=pwd; Charset=utf8mb4;SslMode=none;Min pool size=1"
     //SqlServer "Data Source=.;User Id=sa;Password=pwd;Initial Catalog=admindb;TrustServerCertificate=true;Pooling=true;Min Pool Size=1"
     //PostgreSQL "Host=localhost;Port=5432;Username=postgres;Password=; Database=admindb;Pooling=true;Minimum Pool Size=1"
     //Sqlite "Data Source=|DataDirectory|\\admindb.db; Pooling=true;Min Pool Size=1"
-    "connectionString": "Data Source=|DataDirectory|\\admindb.db; Pooling=true;Min Pool Size=1",
+    "connectionString": "Data Source=.;User Id=sa;Password=123456;Initial Catalog=admindb;TrustServerCertificate=true;Pooling=true;Min Pool Size=1",
 
     //指定程序集
     //FreeSql.MySql.MySqlProvider`1,FreeSql.Provider.MySqlConnector
